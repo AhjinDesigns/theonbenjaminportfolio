@@ -126,13 +126,21 @@ body {
   transition: all 0.2s;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .contact-btn {
+    padding: 5px 1px;        /* slightly smaller padding */
+    font-size: 1px;          /* a bit smaller text */
+    border-radius: px;      /* tighter corners for mobile */
+  }
+
+  .contact-btn span {
+    white-space: nowrap;
+  }
+}
+
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   .nav-links {
     flex-direction: column;
@@ -140,10 +148,6 @@ body {
     margin-top: 1rem;
   }
 
-  .contact-btn {
-    margin-top: 1rem;
-    align-self: flex-start;
-  }
 }
 /* Hero Section */
 .hero-section {
